@@ -1,0 +1,6 @@
+자바 스크립트는 HTML안에
+script 부분에 있는 코드이다.
+
+<script> </script>
+alert : 알림창
+console.log() : 괄호안에 있는 것을 콘솔 창에 띄우는 것
