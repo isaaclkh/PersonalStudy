@@ -1,0 +1,8 @@
+Questions
+
+1.  background-color  vs  boackground   (the same when I try it)
+2.  .Tag  vs  .Tag >  vs  .Tag *        (the same when I try it)
+
+Tip
+
+1. visual studio 주석 ==> "ctrl + /"
