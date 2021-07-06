@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang= "kor">
+    <head></head>
+    <body>
+        <style>
+
+            *{
+                border-collapse: collapse;
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                list-style: none; 
+            }
+
+            div > span{
+                display: block; /* when you write this, then it will change with block kind format*/
+                background: pink;
+            }
+
+            div > div{
+                /* display: inline; this would change to inline format*/
+                /* display: none;   
+                -- this code would make invisible on the screen
+                you should know that it exist but invisible about appereance */
+                flex: 1;
+                background: skyblue;
+                border: 1px solid white;
+            }
+            
+            .flexible{
+                display: flex;
+            }
+
+            .flexible > div:first-child{
+                flex: 2;
+            }
+
+            /* why we use flex
+            span does not apply height
+            even though we can use padding that only works on
+            the width not the heigt
+            however block type of format could change the height
+            But as you know block type of format uses the whole line of the browser
+            that's why we use block and change it to inline format
+            To change each of the element differently, we use flexible
+        </style>
+
+        <div>
+            <span>span</span>
+            <span>span</span>
+        </div>
+
+        <div class="flexible">
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+        </div>
+
+    </body>
+</html>
