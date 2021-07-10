@@ -1,2 +1,11 @@
 pixabay
 https://pixabay.com/ko/
+
+https://xd.adobe.com/spec/410da927-507a-4b73-47d2-9aa39aac9365-373c/specs/
+
+html에서는 대소문자를 구분하지 못하기에
+자바 스크립트 같은 경우 카멜케이스를 통해 사용하지만
+html은 스네이크케이스를 사용한다.
+
+ex) 카멜케이스 : userList, greenApple
+    스네이크케이스 : user_list, green_apple

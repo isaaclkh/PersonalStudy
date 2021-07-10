@@ -8,6 +8,20 @@
     color: black;
 }/* 초기설정 */
 
+h1{
+    font-size: 48px;
+    font-weight: 100px;
+} /* 밑에 글씨들도 48픽셀로 고정으로 해두기에 */
+
+.contents1{
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+.result{
+    font-size: 24px;
+}
+
 .intro{    /*배경화면*/
     background-image:url("image/background.jpeg");
     width: 100%;
@@ -21,7 +35,7 @@
     height: 86px;
 }
 
-.searchArea{ /* 검색창 */
+.search_area{ /* 검색창 */
     margin-top: 24px; /* 네비게이션 바랑 위치를 맞추기 위해서 (위에서부터 24픽셀 아래로) */
     width: 300px;
     height: 40px;
@@ -29,7 +43,7 @@
     border-radius: 5px; /* 둥글게 */
 }
 
-.searchArea > form > input{ /* 검색 입력창 */
+.search_area > form > input{ /* 검색 입력창 */
     border: none;
     width: 250px;
     height: 40px;
@@ -38,7 +52,7 @@
     padding-left: 10px; /* 조금 더 안전하게 글자가 들어갈 수 있도록 조정 */
 }
 
-.searchArea > form > span{ /* 검색 버튼 */
+.search_area > form > span{ /* 검색 버튼 */
     width: 50px;
     color: #fff;
     font-weight: bold;
@@ -58,4 +72,56 @@
 
 .navigation > li > a { /* navigation의 원소들 안에 a 태그들을 접근 (그냥 네비게이션 안에 넣으면 적용이 안됨) */
     color: #fff; /* 네비게이션 바의 글씨들을 흰색으로 */
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto; /* 상우하좌 순 */
+    text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+}
+
+.list{
+    position: relative;
+    top: -66px;
+    display: flex;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+    /* 처음 인자는 좌우를 지정 (양수이면 우측으로)
+    두번째 인자는 그림자의 크기
+    세번째 인자는 스프레드 효과 즉, 흐려지는 효과를 말하는 것이다
+    네번째는 그림자의 색깔
+    */
+    margin: auto;
+}
+
+.list > li > div{
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+    /*border-right: 1px solid gray; */
+}
+
+.list > li:not(:last-child) > div{
+    border-right: 1px solid #E1E1E1;
+}
+
+/*
+.list > li > div:not(:last-child){
+    border-right: 1px solid gray;
+}
+위 코드로 진행했으나 모든 border가 사라졌기에
+사실은 li안에 div들은 모두가 첫번째 요소이자
+마지막 요소이기에 적용할 수 있는 것이 없는 것이다.
+*/
+
+.list > li{
+    flex: 1;
+    width: 320px;
+    height: 132px;
 }
