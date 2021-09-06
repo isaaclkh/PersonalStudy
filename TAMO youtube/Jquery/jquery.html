@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            var num1 = 1;
+            var char1 = "1";
+
+            if(num1==1){
+                document.write("num1은 "+num1+"입니다.<br><br>");
+            }
+            else{
+                document.write("num1은 1이 아닙니다.<br><br>");
+            }
+
+            for(var i=1; i<=5; i++){
+                document.write(i+"<br>");
+            }
+            document.write("<br><br>")
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    alert("Hi~!");
+                });
+            });
+        </script>
+
+        <style>
+            .btn{
+                width:100px;
+                height:40px;
+                line-height:40px;
+                background:lightpink;
+                color:#fff;
+                text-align:center;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="btn">Isaac</div>
+    </body>
+</html>
