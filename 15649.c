@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void dfs(int count, int m, int n);
 int arr[9] = {0,};
