@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang= "kor">
+    <head></head>
+    <body>
+        <style>
+
+            *{ /* apply to all*/
+                border-collapse: collapse;
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none; /* some words are underlined so you need to reset this*/
+                list-style: none; /* resting bullet style of listing*/
+            }
+            /* initiating design, write this code (upper one) to make it clear*/
+
+            table{
+                /* border-bottom: 1px solid black; */
+                border: 1px solid black;
+                border-collapse: collapse; /* erasing the gaps between the border */
+            }
+
+            table > thead > tr > th{
+                border: 1px solid gray;
+            }
+
+            table > tbody > tr > td{
+                border: 1px solid gray;
+                background: pink;
+            }
+
+            /*
+            or you could wirte
+
+            table th { ... }
+            
+            rather than
+            
+            table > thead > tr > th
+            
+            */
+        </style>
+
+        <table>
+            <thead>
+                <tr> <!--가로를 묶어주는 태그-->
+                    <th>name</th>
+                    <th>sex</th>
+                    <th>age</th>
+                    <th>height</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Isaac</td>
+                    <td>male</td>
+                    <td>23</td>
+                    <td>165</td>
+                </tr>
+
+                <tr>
+                        <td>May</td>
+                        <td>female</td>
+                        <td>20</td>
+                        <td>160</td>
+                </tr>
+            </tbody>
+
+        </table>
+       
+    </body>
+</html>

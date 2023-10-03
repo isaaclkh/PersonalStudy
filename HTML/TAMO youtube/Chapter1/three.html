@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang= "kor">
+    <head></head>
+    <body>
+        <style>
+            li{
+                list-style: none;
+            }
+
+            .colorBtn{
+                width:100px;
+                height:36px;
+                background-color:green;
+                color:white;
+                text-align: center;
+                line-height:36px;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+
+        </style>
+        <fom>
+            
+        <!-- 
+            <input type="text">
+            <input type="submit">
+            input type text and submit are inline type
+            so when you put them together they just stick together
+            which makes user unsatisfied
+
+            if you do not understand try this code
+
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="submit">
+            <input type="submit">
+            <input type="submit">
+
+            below it showes how to solve this kind of problem
+        -->
+
+            <ul>
+                <li><input type="text"></li>
+                <li><input type="password"></li>
+                <li>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruit" id="apple">사과</label>    
+                    <label><input type="radio" name="fruit" id="strawberry">딸기</label>
+                </li>
+                    <!--
+                        the reason why the input names are the same (here we put as "fruit")
+                        so that the user can choose only one of the inputs which are gathered
+                        as same name
+
+                        meaning the user could only choose one of the choices; orange, apple, or strawberry
+                        (preventing mulitple choices)
+                    -->
+                
+                <li>
+                    <label><input type="checkbox" name="fruit" id="orange">오렌지</label>
+                    <label><input type="checkbox" name="fruit" id="apple">사과</label>    
+                    <label><input type="checkbox" name="fruit" id="strawberry">딸기</label>
+                </li>
+                    <!-- 
+                        Radio could not choose multiple choices, but
+                        checkbox, in the other hand, could choose
+                        not only one but as many as posible
+                    -->
+                
+                
+                <!-- 
+                <li><input type="button" value="버튼입니다"></li>
+                <li><input type="submit" value="저장하기"></li>
+                <button>버튼임돠</button>
+
+                this kinds of codes are not that useful
+                because it makes different icons(buttons) by the workspace
+                different button in chrome, other different button in safari
+                , firefox, and etc.
+
+                below there are the codes which shows how to figure this kind of problems
+                -->
+
+                <li><div class="colorBtn">버튼입니다</div></li>
+            </ul>
+        </fom>
+    </body>
+</html>

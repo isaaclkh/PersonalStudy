@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hidden</title>
+    </head>
+    <body>
+        <form action="http://localhost/hidden.php">
+            <input type="text" name="id" value="default">
+            <input type="hidden" name="hide" value="egoing">
+            <input type="submit" value="전송">
+        </form>
+    </body>
+    <br>hidden을 통해서 submit을 했을 때 그 히든 값들도 같이 그 전송하는 곳으로 보내진다.
+    <br>(막상 어디다가 쓰이는지는 정확하게 잘 모르겠음 약간 private과 같은 비슷한 개념?)
+    <br>UI에 안나와있지만 서버로 전송하고 싶을 때 hidden을 사용하게 됨
+</html>

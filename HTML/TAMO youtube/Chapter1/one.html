@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang= "kor">
+    <head></head>
+    <body>
+        <style>
+            .blockTag{
+                background:yellowgreen;
+            }
+
+            .blockTag > div{
+                background-color : tomato;
+                border:1px solid black;
+            }
+
+            .inlineTag span{
+                background: skyblue;
+                border:1px solid black;
+            }
+        </style>
+        <div class="blockTag">
+            <div>block1</div>
+            <div>block2</div>
+            <div>block3</div>
+        </div>
+
+        <div class="inlineTag">
+            <span>inline 1</span>
+            <span>inline 2</span>
+            <span>inline 3</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>First Matrix</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <table border="2">
+
+            <thead>
+               <tr>
+                        <th>이름</th>    <th>성별</th>    <th>주소</th>  <th>회비</th>
+               </tr>
+            </thead>        
+
+            <tbody>
+                <tr>
+                    <td>최진혁</td>  <td>남</td>      <td rowspan="2">청주</td>  <td>1000</td>
+                </tr>
+
+                <tr>
+                    <td>최유빈</td>  <td>여</td>       <td>500</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">합계</td> <td>1500</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <br>
+        rowspan은 행(row, 세로)병합, colspan은 열(col, 가로)병합이다.
+    </body>
+</html>
