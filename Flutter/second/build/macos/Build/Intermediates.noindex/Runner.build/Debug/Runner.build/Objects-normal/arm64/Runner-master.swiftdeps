@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "9a1a92567da5ba281853eeb8aa848932366c22d4c906cd6a3183548b7eafb970"
+build_start_time: [1658991676, 497055053]
+build_end_time: [1658991687, 535590171]
+inputs:
+  "/Users/isaac/Desktop/\u1100\u1165\u11AB\u1112\u1169/Code/flutter/second/macos/Flutter/GeneratedPluginRegistrant.swift": [1658991650, 923478126]
+  "/Users/isaac/Desktop/\u1100\u1165\u11AB\u1112\u1169/Code/flutter/second/macos/Runner/AppDelegate.swift": [1655929743, 0]
+  "/Users/isaac/Desktop/\u1100\u1165\u11AB\u1112\u1169/Code/flutter/second/macos/Runner/MainFlutterWindow.swift": [1655929743, 0]
